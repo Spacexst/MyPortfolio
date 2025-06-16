@@ -1,0 +1,25 @@
+@mixin flexCenter($direction){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+
+
+}
+@mixin section-layout {
+  .row {
+    align-items: start;
+
+    aside {
+      text-align: end;
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    article {
+      text-align: start;
+    }
+  }
+}
