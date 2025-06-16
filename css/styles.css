@@ -23,4 +23,8 @@ body {
 section h4 {
   color: black;
   margin-bottom: 1rem;
+}
+
+.navbar {
+  background-color: #262262;
 }/*# sourceMappingURL=styles.css.map */
