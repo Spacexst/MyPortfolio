@@ -1,5 +1,5 @@
 body {
-  background-color: #E3F2FD;
+  background-color: rgba(255, 255, 0, 0.741);
 }
 
 .main {
@@ -9,9 +9,14 @@ body {
   flex-direction: row;
   font-weight: 400;
 }
+@media (max-width: 800px) {
+  .main {
+    flex-direction: column;
+  }
+}
 
 #work-experience h1 {
-  color: #E3F2FD;
+  color: rgba(255, 255, 0, 0.741);
   margin-bottom: 1rem;
 }
 #work-experience p {
@@ -27,4 +32,5 @@ section h4 {
 
 .navbar {
   background-color: #262262;
+  color: white;
 }/*# sourceMappingURL=styles.css.map */

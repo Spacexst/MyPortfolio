@@ -1,4 +1,5 @@
-$primary-color:#E3F2FD;
+$primary-color: rgba(255, 255, 0, 0.741);
+
 
 $accent-color: blue;
 $text-color: black;
@@ -7,4 +8,6 @@ $font-weights: (
   "regular": 400,
   "medium": 500,
   "bold": 8009
-)
+);
+$mobile: 800px;
+

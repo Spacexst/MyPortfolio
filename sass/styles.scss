@@ -10,6 +10,9 @@ body{
 .main{
   @include flexCenter(row);
   font-weight: weight(regular);
+  @include mobile{
+    flex-direction: column;
+  }
 }
 #work-experience {
   h1 {
