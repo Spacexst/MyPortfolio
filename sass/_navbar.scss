@@ -1,0 +1,26 @@
+.navbar {
+  margin-bottom: 20px;
+
+  .navbar-brand {
+    font-weight: bold;
+
+    .nav-link {
+      color: white;
+    }
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    padding: 0.5rem 1rem;
+    color: white;
+  }
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: $color-active !important;
+}

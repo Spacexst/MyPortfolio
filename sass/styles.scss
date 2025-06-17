@@ -2,14 +2,29 @@
 @import "./variables";
 @import "./function";
 @import "./mixins";
+@import "./navbar";
 
-body{
-
-  background-color: $primary-color;
-   font-family: Arial, sans-serif;
-      text-align: center;
-  
+body
+{
+  background: $primary-color;
 }
+
+
+header
+{
+  padding: $padding-small;
+}
+
+.container
+ {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $padding-small;
+    padding-right: $padding-small;
+    text-align: center;
+    
+    
+ }
 .main{
   @include flexCenter(row);
   font-weight: weight(regular);
@@ -43,6 +58,14 @@ section h4 {
 .btn{
   background-color: lightsteelblue;
 }
+.nav-link:hover {
+  color: $color-active; /* Example: orange-red on hover */
+}
+/*
+.nav-link:hover{
+  color: color-active;
+  
+}*/
 
       
     

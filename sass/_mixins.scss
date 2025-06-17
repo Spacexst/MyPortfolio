@@ -28,3 +28,20 @@
     @content;
   }
 }
+@mixin responsive-padding($small, $medium, $latge, $x-large, $xx-large){
+  padding: $small;
+
+  @media (min-width:576px){
+    padding: $medium;
+  }
+  @m
+  @media (min-width:768px){
+    padding: $large
+  }
+  @media (min-width:992px){
+    padding: $x-large;
+  }
+   @media (min-width:1200px){
+    padding: $xx-large;
+  }
+}

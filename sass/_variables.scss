@@ -1,10 +1,11 @@
-$primary-color: rgba(255, 0, 0, 0.429);
+$primary-color: #F4DE56;
+$color-active: red;
 
 
 
 
 
-$text-color: black;
+$text-color: #4016ea;
 
 $font-weights: (
   "regular": 400,
@@ -12,4 +13,11 @@ $font-weights: (
   "bold": 8009
 );
 $mobile: 800px;
+//padding
+$padding-small: 1rem;
+$padding-medium: 2rem;
+$padding-large: 3rem;
+$padding-x-large: 4rem;
+$padding-xx-large: 5rem;
+
 
