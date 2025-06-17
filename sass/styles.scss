@@ -6,6 +6,9 @@
 body{
 
   background-color: $primary-color;
+   font-family: Arial, sans-serif;
+      text-align: center;
+  
 }
 .main{
   @include flexCenter(row);
@@ -31,10 +34,38 @@ section h4 {
   margin-bottom: 1rem;
   
 }
-.navbar{
-  background-color: #262262;
-  color: white;
+.badge{
+  background-color: black;
+  font-size: 1rem;
+  padding: 0.6em 0.8em;
+  border-radius: 1.5em
 }
+.btn{
+  background-color: lightsteelblue;
+}
+
+      
+    
+    .slider-container {
+      width: 200px;
+      margin: 0 auto;
+    }
+    .value-display {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+fieldset {
+  border: 1px solid #ccc;
+}
+#formSuccess {
+  transition: opacity 0.5s ease;
+}
+
 
 
  
