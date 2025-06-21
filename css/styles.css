@@ -21,8 +21,32 @@
   color: red !important;
 }
 
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.card .card-title {
+  color: #F4DE56;
+  font-weight: 600;
+}
+.card .btn-outline-primary {
+  color: #F4DE56;
+  border-color: #F4DE56;
+}
+.card .btn-outline-primary:hover {
+  background-color: #F4DE56;
+  color: white;
+}
+
 body {
-  background: #F4DE56;
+  background-color: #F4DE56;
+}
+
+body {
+  background-color: #F4DE56;
 }
 
 header {

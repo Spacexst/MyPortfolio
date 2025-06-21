@@ -1,0 +1,26 @@
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  .card-title {
+    color: $primary-color;
+    font-weight: 600;
+  }
+
+  .btn-outline-primary {
+    color: $primary-color;
+    border-color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+}
+body {
+  background-color: $primary-color;
+}

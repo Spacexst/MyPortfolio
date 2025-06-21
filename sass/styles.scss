@@ -3,11 +3,13 @@
 @import "./function";
 @import "./mixins";
 @import "./navbar";
+@import "./components";
+@import "./forms";
 
-body
-{
-  background: $primary-color;
+body {
+  background-color: $primary-color;
 }
+
 
 
 header
