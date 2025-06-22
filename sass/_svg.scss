@@ -1,0 +1,37 @@
+.circle-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  
+
+  svg {
+    width: 150px;
+    height: 150px;
+    transform: rotate(-90deg);
+  }
+
+  circle {
+    fill: none;
+    stroke-width: 10;
+  }
+
+  .background {
+    stroke: #eee;
+  }
+
+  .progress {
+    stroke: pink;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 0.5s linear;
+  }
+
+  .percent-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+  }
+}

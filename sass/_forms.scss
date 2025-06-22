@@ -1,12 +1,12 @@
 fieldset {
   border: 1px solid #ccc;
   border-radius: $border-radius;
-  padding: $spacing-unit;
+  padding: $padding-small;
 
   legend {
     font-weight: bold;
     color: $primary-color;
-    @include responsive-text(1.1rem);
+    
   }
 }
 
@@ -19,18 +19,16 @@ form {
     background-color: $secondary-color;
     color: white;
 
-    &:hover {
-      background-color: darken($primary-color, 10%);
-    }
+    
   }
 
   #formSuccess {
-    color: $success-color;
+    color: $color-active;
     font-weight: bold;
   }
 
   #formError {
-    color: $error-color;
+    color: $color-active;
     font-weight: bold;
   }
 }

@@ -29,24 +29,82 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 .card .card-title {
-  color: #F4DE56;
+  color: hwb(54 9% 9%);
   font-weight: 600;
 }
 .card .btn-outline-primary {
-  color: #F4DE56;
-  border-color: #F4DE56;
+  color: hwb(54 9% 9%);
+  border-color: hwb(54 9% 9%);
 }
 .card .btn-outline-primary:hover {
-  background-color: #F4DE56;
+  background-color: hwb(54 9% 9%);
   color: white;
 }
 
 body {
-  background-color: #F4DE56;
+  background-color: hwb(54 9% 9%);
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 1rem;
+}
+fieldset legend {
+  font-weight: bold;
+  color: hwb(54 9% 9%);
+}
+
+form .form-label {
+  font-weight: 600;
+}
+form .btn {
+  background-color: blue;
+  color: white;
+}
+form #formSuccess {
+  color: red;
+  font-weight: bold;
+}
+form #formError {
+  color: red;
+  font-weight: bold;
+}
+
+.circle-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.circle-container svg {
+  width: 150px;
+  height: 150px;
+  transform: rotate(-90deg);
+}
+.circle-container circle {
+  fill: none;
+  stroke-width: 10;
+}
+.circle-container .background {
+  stroke: #eee;
+}
+.circle-container .progress {
+  stroke: pink;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  transition: stroke-dashoffset 0.5s linear;
+}
+.circle-container .percent-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: bold;
 }
 
 body {
-  background-color: #F4DE56;
+  background-color: hwb(54 9% 9%);
 }
 
 header {
@@ -75,7 +133,7 @@ header {
 }
 
 #work-experience h1 {
-  color: #F4DE56;
+  color: hwb(54 9% 9%);
   margin-bottom: 1rem;
 }
 #work-experience p {
@@ -90,7 +148,7 @@ section h4 {
 }
 
 .badge {
-  background-color: black;
+  background-color: hsla(258, 88%, 45%, 0.875);
   font-size: 1rem;
   padding: 0.6em 0.8em;
   border-radius: 1.5em;

@@ -106,11 +106,21 @@
         </aside>
         <article class="col-md-8">
           
+          
   <div class="row">
     <div class="col-6 col-md-4 mb-2">
       <span class="badge"><i class="fab fa-html5 me-1"></i> HTML5</span>
-    </div>
+ <div class="circle-container">
+  <svg>
+    <circle class="background" cx="75" cy="75" r="70"/>
+    <circle class="progress" cx="75" cy="75" r="70"/>
+  </svg>
+  <div class="percent-text" id="value">0%</div>
+</div>
+      
+    
     <div class="col-6 col-md-4 mb-2">
+      
       <span class="badge"><i class="fab fa-css3-alt me-1"></i> CSS3</span>
     </div>
     <div class="col-6 col-md-4 mb-2">
@@ -245,6 +255,9 @@
   <footer class="bg-dark text-white text-center p-3">
     <small>&copy; Anuradha Mangalpalli 2025. All rights reserved.</small>
   </footer>
+  
+
+ 
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -285,6 +298,27 @@
     setTimeout(() => {
       successDiv.style.display = "none";
     }, 4000);
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const percent = 75; // Set your target percent here
+    const valueSpan = document.getElementById("value");
+    const circle = document.querySelector(".progress");
+
+    let currentPercent = 0;
+
+    const interval = setInterval(() => {
+      currentPercent += Math.ceil((percent - currentPercent) / 10);
+
+      if (currentPercent > percent) {
+        currentPercent = percent;
+        clearInterval(interval);
+      }
+
+      valueSpan.textContent = currentPercent + "%";
+      circle.style.strokeDashoffset = `${440 - (440 * (currentPercent / 100))}`;
+    }, 500);
   });
 </script>
 

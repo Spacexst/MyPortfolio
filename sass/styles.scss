@@ -5,6 +5,7 @@
 @import "./navbar";
 @import "./components";
 @import "./forms";
+@import "./svg.scss";
 
 body {
   background-color: $primary-color;
@@ -51,8 +52,9 @@ section h4 {
   margin-bottom: 1rem;
   
 }
+
 .badge{
-  background-color: black;
+  background-color: hsla(258, 88%, 45%, 0.875);
   font-size: 1rem;
   padding: 0.6em 0.8em;
   border-radius: 1.5em
