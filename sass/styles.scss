@@ -1,4 +1,4 @@
-@import "./resets";
+@import "./reset";
 @import "./variables";
 @import "./function";
 @import "./mixins";
@@ -10,14 +10,39 @@
 
 body {
   background-color: $primary-color;
+  color: #333;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1;
 }
-
-
-
-header
-{
+h1,h2.h3{
+  font-weight: 400;
+}
+.header-in {
+  width: 100%;
   padding: $padding-small;
+  background-color: #f8f9fa; // light gray or customize
+  color: #212529; // Bootstrap's text-dark
+  z-index: 2;
+  position: relative;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #6c757d; // text-muted look
+  }
 }
+
+
+
+
 
 .container
  {
@@ -29,25 +54,14 @@ header
     
     
  }
-.main{
-  @include flexCenter(row);
-  font-weight: weight(regular);
-  @include mobile{
-    flex-direction: column;
-  }
-}
-#work-experience {
-  h1 {
-    color: $primary-color; // Or just use a color like #007bff
-    margin-bottom: 1rem;
-  }
+
 
   p {
     font-size: 1.1rem;
     line-height: 1.6;
     color: #333;
   }
-}
+
 section h4 {
   color: black;
   margin-bottom: 1rem;
@@ -60,8 +74,9 @@ section h4 {
   padding: 0.6em 0.8em;
   border-radius: 1.5em
 }
-.btn{
-  background-color: lightsteelblue;
+.btn,
+.col-12 .btn{
+  background-color: red;
 }
 .nav-link:hover {
   color: $color-active; /* Example: orange-red on hover */
