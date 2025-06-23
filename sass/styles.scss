@@ -6,6 +6,7 @@
 @import "./components";
 @import "./forms";
 @import "./svg.scss";
+@import "./progressbar";
 
 body {
   background-color: $primary-color;
@@ -54,7 +55,7 @@ section h4 {
 }
 
 .badge{
-  background-color: hsla(258, 88%, 45%, 0.875);
+  background-color: lab(42.93% 57.76 37.4 / 0.875);
   font-size: 1rem;
   padding: 0.6em 0.8em;
   border-radius: 1.5em
@@ -70,10 +71,23 @@ section h4 {
   color: color-active;
   
 }*/
+h4{
+  text-align: left;
+}
+.div{
+  margin-bottom: 20px;
+}
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s forwards;
+}
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
       
-    
-    .slider-container {
+ .slider-container {
       width: 200px;
       margin: 0 auto;
     }

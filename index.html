@@ -14,12 +14,6 @@
 
 <body>
 
-  
-
-  <div class="fade-overlay" id="overlay">
-    <h2>Welcome to my Portfolio</h2>
-  </div>
-
   <header class="header-in text-center">
     <h1>Anuradha Mangalpalli</h1>
     <p>Web developer and designer</p>
@@ -44,6 +38,11 @@
       </div>
     </div>
   </nav>
+  
+
+   <div class="fade-overlay" id="overlay">
+    <h2>Welcome to my Portfolio</h2>
+  </div>
 
   <main class="container py-5">
     <!-- About Section -->
@@ -97,53 +96,70 @@
         </article>
       </div>
     </section>
+ <section id="technical" class="my-5">
+  <div class="container">
+    <h4>Technical Skills</h4>
 
-    <!-- Technical Skills -->
-    <section id="technical" class="my-5">
-      <div class="row align-items-start">
-        <aside class="col-md-4 text-md-end text-center">
-          <h4>Technical Skills</h4>
-        </aside>
-        <article class="col-md-8">
-          
-          
-  <div class="row">
-    <div class="col-6 col-md-4 mb-2">
-      <span class="badge"><i class="fab fa-html5 me-1"></i> HTML5</span>
- <div class="circle-container">
-  <svg>
-    <circle class="background" cx="75" cy="75" r="70"/>
-    <circle class="progress" cx="75" cy="75" r="70"/>
-  </svg>
-  <div class="percent-text" id="value">0%</div>
-</div>
-      
-    
-    <div class="col-6 col-md-4 mb-2">
-      
-      <span class="badge"><i class="fab fa-css3-alt me-1"></i> CSS3</span>
+    <!-- Front-end Skills -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 text-start">
+        <h5 class="mb-3">Front-end Skills</h5>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-white fs-6">
+            <i class="fab fa-html5 me-1"></i> HTML5
+          </span>
+          <span class="badge text-white fs-6">
+            <i class="fab fa-css3-alt me-1"></i> CSS3
+          </span>
+          <span class="badge text-white fs-6">
+            <i class="fab fa-js me-1"></i> JavaScript
+          </span>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="percent" data-percentage="60">
+          <svg viewBox="0 0 150 150">
+            <circle class="background" cx="75" cy="75" r="70"></circle>
+            <circle class="progress-circle foreground" id="circle1" cx="75" cy="75" r="70"></circle>
+          </svg>
+          <div class="number">
+            <h3><span class="value percent-text" id="value1">0</span><span>%</span></h3>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-6 col-md-4 mb-2">
-      <span class="badge"><i class="fab fa-js me-1"></i> JavaScript</span>
-    </div>
-    <div class="col-6 col-md-4 mb-2">
-      <span class="badge"><i class="fab fa-react me-1"></i> React.js</span>
-    </div>
-    <div class="col-6 col-md-4 mb-2">
-      <span class="badge"><i class="fab fa-react me-1"></i> React Native</span>
-    </div>
-    <div class="col-6 col-md-4 mb-2">
-      <span class="badge"><i class="fab fa-node-js me-1"></i> Node.js</span>
-    </div>
-    <div class="col-6 col-md-4 mb-2">
-      <span class="badge"><i class="fab fa-python me-1"></i> Django</span>
-    </div>
-    <div class="col-6 col-md-4 mb-2">
-      <span class="badge"><i class="fab fa-php me-1"></i> PHP</span>
+
+    <!-- Back-end Skills -->
+    <div class="row align-items-center mb-4">
+      <div class="col-md-6 text-start">
+        <h5 class="mb-3">Back-end Skills</h5>
+        <div class="d-flex flex-wrap gap-2">
+          <span class="badge text-white fs-6">
+            <i class="fab fa-python me-1"></i> Django
+          </span>
+          <span class="badge text-white fs-6">
+            <i class="fab fa-node-js me-1"></i> Node.js
+          </span>
+          <span class="badge text-white fs-6">
+            <i class="fab fa-php me-1"></i> PHP
+          </span>
+        </div>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="percent" data-percentage="80">
+          <svg viewBox="0 0 150 150">
+            <circle class="background" cx="75" cy="75" r="70"></circle>
+            <circle class="progress-circle foreground" id="circle2" cx="75" cy="75" r="70"></circle>
+          </svg>
+          <div class="number">
+            <h3><span class="value percent-text" id="value2">0</span><span>%</span></h3>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</article>
-
+</section>
+   
 
        
       </div>
@@ -256,9 +272,6 @@
     <small>&copy; Anuradha Mangalpalli 2025. All rights reserved.</small>
   </footer>
   
-
- 
-
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
@@ -300,31 +313,39 @@
     }, 4000);
   });
 </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const percent = 75; // Set your target percent here
-    const valueSpan = document.getElementById("value");
-    const circle = document.querySelector(".progress");
 
-    let currentPercent = 0;
 
-    const interval = setInterval(() => {
-      currentPercent += Math.ceil((percent - currentPercent) / 10);
 
-      if (currentPercent > percent) {
-        currentPercent = percent;
-        clearInterval(interval);
-      }
-
-      valueSpan.textContent = currentPercent + "%";
-      circle.style.strokeDashoffset = `${440 - (440 * (currentPercent / 100))}`;
-    }, 500);
-  });
-</script>
 
 
 
 </body>
+<script>
+    // Select elements for percent and circle
+    const percentages = [60, 80, 90];
+        percentages.forEach((percent, index) => {
+            const valueSpan = document.querySelector(`#value${index + 1}`);
+            const circle = document.querySelector(`#circle${index + 1}`);
+            // Function to animate the circle
+            function animateCircle(targetPercent) {
+                let currentPercent = 0;
+                const interval = setInterval(() => {
+currentPercent += Math.ceil((targetPercent -
+currentPercent) / 10); // Increment the percentage
+ if (currentPercent > targetPercent) {
+ currentPercent = targetPercent;
+ clearInterval(interval);
+ }
+ valueSpan.textContent = currentPercent;
+ circle.style.strokeDashoffset = `${440 - (440 * 
+(currentPercent / 100))}`;
+ }, 500); // Update every 500ms
+ }
+ animateCircle(percent); // Start the animation
+ });
+ </script>
+ 
+
 </html>
 
 
