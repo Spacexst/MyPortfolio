@@ -3,10 +3,12 @@
 @import "./function";
 @import "./mixins";
 @import "./navbar";
-@import "./components";
+
 @import "./forms";
 @import "./svg.scss";
 @import "./progressbar";
+@import "./project";
+
 
 body {
   background-color: $primary-color;
@@ -20,7 +22,7 @@ header,
 .header-in {
   width: 100%;
   padding: $padding-small;
-  background-color: #f8f9fa; // light gray
+  background-color: $primary-color; // light gray
   color: #212529;
   z-index: 2;
   position: relative;
