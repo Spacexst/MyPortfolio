@@ -293,10 +293,7 @@ body {
   line-height: 1;
 }
 
-h1, h2.h3 {
-  font-weight: 400;
-}
-
+header,
 .header-in {
   width: 100%;
   padding: 1rem;
@@ -306,11 +303,13 @@ h1, h2.h3 {
   position: relative;
   text-align: center;
 }
+header h1,
 .header-in h1 {
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
+header p,
 .header-in p {
   font-size: 1.25rem;
   font-weight: 400;
@@ -331,9 +330,24 @@ p {
   color: #333;
 }
 
-section h4 {
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+h4 {
+  text-align: left;
   color: black;
   margin-bottom: 1rem;
+}
+
+footer {
+  background-color: #212120;
+  border: 1px solid yellow;
+  width: 100%;
+  height: 10vh;
+  padding: 1rem;
+  text-align: center;
+  color: #fff;
 }
 
 .badge {
@@ -349,16 +363,7 @@ section h4 {
 }
 
 .nav-link:hover {
-  color: red; /* Example: orange-red on hover */
-}
-
-/*
-.nav-link:hover{
-  color: color-active;
-
-}*/
-h4 {
-  text-align: left;
+  color: red;
 }
 
 .div {
