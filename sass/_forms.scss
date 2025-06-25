@@ -1,16 +1,15 @@
-fieldset {
-  border: 1px solid #ccc;
-  border-radius: $border-radius;
-  padding: $padding-small;
-
-  legend {
-    font-weight: bold;
-    color: $primary-color;
-    
-  }
-}
-
 form {
+  fieldset {
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+    padding: $padding-small;
+
+    legend {
+      font-weight: bold;
+      color: $primary-color;
+    }
+  }
+
   .form-label {
     font-weight: 600;
   }
@@ -18,8 +17,6 @@ form {
   .btn {
     background-color: $secondary-color;
     color: white;
-
-    
   }
 
   #formSuccess {

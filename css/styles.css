@@ -120,21 +120,20 @@
     padding: 2rem;
   }
 }
-fieldset {
+form fieldset {
   border: 1px solid #ccc;
   border-radius: 20px;
   padding: 1rem;
 }
-fieldset legend {
+form fieldset legend {
   font-weight: bold;
   color: hwb(54 9% 9%);
 }
-
 form .form-label {
   font-weight: 600;
 }
 form .btn {
-  background-color: blue;
+  background-color: black;
   color: white;
 }
 form #formSuccess {
@@ -166,7 +165,7 @@ form #formError {
 }
 
 .percent .foreground {
-  stroke: #21a0ff;
+  stroke: #0d558c;
   stroke-width: 10;
   fill: none;
   stroke-dasharray: 440;
@@ -331,7 +330,7 @@ animation */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 .card .card-title {
-  color: hwb(54 9% 9%);
+  color: black;
   font-weight: 600;
 }
 .card .btn-outline-primary {
@@ -463,21 +462,31 @@ footer {
   border-radius: 1.5em;
 }
 
-.btn,
+.btn {
+  background-color: rgb(180, 63, 82);
+  color: hsl(0, 83%, 50%);
+  font-weight: normal;
+}
+
 .col-12 .btn {
-  background-color: red;
+  background-color: rgb(180, 63, 82);
 }
 
 .nav-link:hover {
   color: red;
 }
 
-.div {
-  margin-bottom: 20px;
+.slider-container {
+  width: 200px;
+  margin: 0 auto;
+}
+.slider-container .value-display {
+  margin-top: 10px;
+  font-size: 1.2em;
 }
 
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.947);
   animation: fadeIn 1s forwards;
 }
 
@@ -489,24 +498,13 @@ footer {
     opacity: 1;
   }
 }
-.slider-container {
-  width: 200px;
-  margin: 0 auto;
+fieldset {
+  border: 1px solid #ccc;
 }
-
-.value-display {
-  margin-top: 10px;
-  font-size: 1.2em;
-}
-
-legend {
+fieldset legend {
   font-weight: bold;
   font-size: 1.2rem;
   color: #333;
-}
-
-fieldset {
-  border: 1px solid #ccc;
 }
 
 #formSuccess {

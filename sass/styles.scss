@@ -4,14 +4,15 @@
 @import "./mixins";
 @import "./navbar";
 @import "./responsive";
-
 @import "./forms";
 @import "./svg.scss";
 @import "./progressbar";
 @import "./project";
 @import "./sidebar";
 
-
+// ==========================
+// BODY
+// ==========================
 body {
   background-color: $primary-color;
   color: #333;
@@ -20,11 +21,14 @@ body {
   line-height: 1;
 }
 
+// ==========================
+// HEADER
+// ==========================
 header,
 .header-in {
   width: 100%;
   padding: $padding-small;
-  background-color: $primary-color; // light gray
+  background-color: $primary-color;
   color: #212529;
   z-index: 2;
   position: relative;
@@ -39,11 +43,13 @@ header,
   p {
     font-size: 1.25rem;
     font-weight: 400;
-    color: #6c757d; // muted
+    color: #6c757d;
   }
 }
 
-
+// ==========================
+// CONTAINER
+// ==========================
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -52,6 +58,9 @@ header,
   text-align: center;
 }
 
+// ==========================
+// TYPOGRAPHY
+// ==========================
 p {
   font-size: 1.1rem;
   line-height: 1.6;
@@ -68,6 +77,9 @@ h4 {
   margin-bottom: 1rem;
 }
 
+// ==========================
+// FOOTER
+// ==========================
 footer {
   background-color: #212120;
   border: 1px solid yellow;
@@ -78,6 +90,9 @@ footer {
   color: #fff;
 }
 
+// ==========================
+// BADGE
+// ==========================
 .badge {
   background-color: lab(42.93% 57.76 37.4 / 0.875);
   font-size: 1rem;
@@ -85,47 +100,72 @@ footer {
   border-radius: 1.5em;
 }
 
-.btn,
-.col-12 .btn {
-  background-color: red;
+// ==========================
+// BUTTONS
+// ==========================
+.btn {
+  background-color: $foreground-color;
+  color: hsl(0, 83%, 50%);
+  font-weight: normal;
 }
 
-.nav-link:hover {
-  color: $color-active;
+// Handle .btn inside .col-12 specifically if needed
+.col-12 {
+  .btn {
+    background-color: $foreground-color;
+  }
 }
 
-.div {
-  margin-bottom: 20px;
+// ==========================
+// NAVBAR
+// ==========================
+.nav-link {
+  &:hover {
+    color: $color-active;
+  }
 }
 
+// ==========================
+// MISC
+// ==========================
+.slider-container {
+  width: 200px;
+  margin: 0 auto;
+
+  .value-display {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+}
+
+// ==========================
+// OVERLAY
+// ==========================
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.947);
   animation: fadeIn 1s forwards;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.slider-container {
-  width: 200px;
-  margin: 0 auto;
-}
-
-.value-display {
-  margin-top: 10px;
-  font-size: 1.2em;
-}
-
-legend {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #333;
-}
-
+// ==========================
+// FORM
+// ==========================
 fieldset {
   border: 1px solid #ccc;
+
+  legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+  }
 }
 
 #formSuccess {
