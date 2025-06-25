@@ -28,7 +28,7 @@
     @content;
   }
 }
-@mixin responsive-padding($small, $medium, $latge, $x-large, $xx-large){
+@mixin responsive-padding($small, $medium, $large, $x-large, $xx-large){
   padding: $small;
 
   @media (min-width:576px){
@@ -36,7 +36,7 @@
   }
   
   @media (min-width:768px){
-    padding: $large
+    padding: $large;
   }
   @media (min-width:992px){
     padding: $x-large;

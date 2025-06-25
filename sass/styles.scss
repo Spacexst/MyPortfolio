@@ -3,11 +3,13 @@
 @import "./function";
 @import "./mixins";
 @import "./navbar";
+@import "./responsive";
 
 @import "./forms";
 @import "./svg.scss";
 @import "./progressbar";
 @import "./project";
+@import "./sidebar";
 
 
 body {
@@ -40,6 +42,7 @@ header,
     color: #6c757d; // muted
   }
 }
+
 
 .container {
   margin-left: auto;

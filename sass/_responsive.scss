@@ -1,0 +1,32 @@
+
+//responsive.scss
+@media (max-width:576px){  //exra small devices
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .container{
+        @include responsive-padding($padding-small,$padding-small,$padding-small,$padding-small,$padding-small)
+
+    }
+}
+
+
+@media (min-width:576px){  //small devices
+   
+
+    .container{
+        @include responsive-padding($padding-small,$padding-medium,$padding-medium,
+        $padding-medium,$padding-medium)
+        
+    }
+}
+@media (min-width:768px){  //medium devices
+   
+    .navbar-nav{
+        text-align:left;
+    }
+    .project{
+        padding: $padding-medium;
+    }
+}

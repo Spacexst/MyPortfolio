@@ -1,8 +1,11 @@
 /* Force the navbar height */
 .navbar {
+  position: relative; // or 'fixed' if it's sticky
+  
   height: 100px !important;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  
 }
 
 /* Make inner container fill navbar height */

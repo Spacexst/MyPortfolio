@@ -9,10 +9,16 @@
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
 
 </head>
 
 <body>
+  
 
   <header class="header-in text-center">
     <h1>Anuradha Mangalpalli</h1>
@@ -38,13 +44,20 @@
       </div>
     </div>
   </nav>
-  
+  <div class="fade-overlay" id="overlay">
+  <h2>Welcome to my Portfolio</h2>
+</div>
+<div class="social-sidebar">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+</div>
 
-   <div class="fade-overlay" id="overlay">
-    <h2>Welcome to my Portfolio</h2>
-  </div>
+ 
+
 
   <main class="container py-5">
+    
     <!-- About Section -->
     <section id="about" class="my-5">
       <div class="row align-items-center">
@@ -212,7 +225,7 @@
             <div class="card-body">
               <h5 class="card-title">Web Concepts</h5>
               <p class="card-text">My first website built using HTML & CSS</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+              
             </div>
           </div>
         </div>
@@ -224,7 +237,7 @@
             <div class="card-body">
               <h5 class="card-title">Web Capstone project</h5>
               <p class="card-text">An food takeaway app built with HTML, CSS, JavaScript and React.js</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+              
             </div>
           </div>
         </div>
@@ -234,7 +247,7 @@
             <div class="card-body">
               <h5 class="card-title">Django project</h5>
               <p class="card-text">Capstone Project (Software development)</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+              
             </div>
           </div>
         </div>
@@ -246,7 +259,7 @@
             <div class="card-body">
               <h5 class="card-title">Web programming (Frontend & Back-end</h5>
               <p class="card-text">A secure login and registration system using PHP and MySQL, styled with Bootstrap forms.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
+              
             </div>
           </div>
         </div>
@@ -299,6 +312,8 @@
       </div>
     </section>
   </main>
+  
+
 
   <!-- Footer -->
   <footer class="footer-in" text-white text-center p-3">
@@ -348,6 +363,20 @@
     }, 4000);
   });
 </script>
+<script>
+  window.addEventListener("DOMContentLoaded", () => {
+    const overlay = document.getElementById("overlay");
+
+    // Add animation class
+    overlay.classList.add("animate-in");
+
+    // Optional: remove overlay after a few seconds
+    setTimeout(() => {
+      overlay.style.display = "none";
+    }, 4000); // 4 seconds
+  });
+</script>
+
 </body>
 <script>
     // Select elements for percent and circle
