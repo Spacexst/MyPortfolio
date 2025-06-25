@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0;
@@ -149,37 +148,46 @@ form #formError {
   position: relative;
   width: 150px;
   height: 150px;
-  margin: 0 auto;
+  margin: 20px auto;
+  display: inline-block;
+  overflow: hidden;
 }
-
 .percent svg {
   width: 100%;
   height: 100%;
   transform: rotate(-90deg);
+  overflow: visible;
 }
-
-.percent .background {
-  stroke: #eee;
-  stroke-width: 10;
+.percent svg circle {
   fill: none;
-}
-
-.percent .foreground {
-  stroke: #0d558c;
   stroke-width: 10;
-  fill: none;
   stroke-dasharray: 440;
+}
+.percent svg circle.background {
+  stroke: #f3f3f3;
+  stroke-dashoffset: 0;
+}
+.percent svg circle.foreground {
+  stroke: #0f65a6;
   stroke-dashoffset: 440;
   transition: stroke-dashoffset 1s ease;
 }
-
 .percent .number {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: bold;
-  font-size: 24px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+.percent .number span:nth-child(1) {
+  font-size: 48px;
+}
+.percent .number span:nth-child(2) {
+  font-size: 20px;
 }
 
 .circle-container {
@@ -191,121 +199,33 @@ form #formError {
   grid-row-gap: 20px;
 }
 
-svg {
-  background-color: none;
-  width: 200px;
-  height: 200px;
-  transform: rotate(-90deg); /* Starts from 12 */
-}
-
-circle.bg {
-  stroke: #eee;
-  stroke-width: 10;
-  fill: gray;
-}
-
-circle.progress {
-  stroke: green;
-  stroke-width: 10;
-  fill: none;
-  stroke-dasharray: 251.2; /*：2πr */
-  stroke-dashoffset: 251.2; /* 0% */
-  transition: stroke-dashoffset 0.5s ease;
-}
-
-text {
-  font-size: 20px;
-  text-anchor: middle;
-  dominant-baseline: middle;
-}
-
-.percent {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 20px;
-  display: inline-block;
-  overflow: hidden; /* Ensure that overflow is hidden */
-}
-
-.percent svg {
-  width: 100%;
-  height: 100%;
-  transform: rotate(-90deg); /* Rotate to start the circle from 
-the top */
-  overflow: visible; /* Ensure that SVG does not clip */
-}
-
-.percent svg circle {
-  fill: none;
-  stroke-width: 10;
-  stroke-dasharray: 440; /* Circumference */
-}
-.percent svg circle .percent svg circle.background {
-  stroke: #f3f3f3; /* Background circle color */
-  stroke-dashoffset: 0; /* Background circle is always visible */
-}
-.percent svg circle .percent svg circle.foreground {
-  stroke: #21a0ff; /* Foreground circle color */
-  stroke-dashoffset: 440; /* Start fully offset initially */
-  transition: stroke-dashoffset 1s ease; /* Smooth transition for 
-
-animation */
-}
-.percent svg circle .percent .number {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-}
-.percent svg circle .percent .number span:nth-child(1) {
-  font-size: 48px;
-}
-.percent svg circle .percent .number span:nth-child(2) {
-  font-size: 20px;
-}
-
 .progress-ring {
   position: relative;
   width: 150px;
   height: 150px;
   margin: 0 auto;
 }
-
-/* Style for the SVG element inside the container */
 .progress-ring svg {
   width: 150px;
   height: 150px;
 }
-
-/* Base style for both circles inside the SVG */
 .progress-ring svg circle {
   fill: none;
   stroke-width: 10;
   stroke: #000;
-  transform: translate(5px, 5px); /* Offset the stroke slightly */
-  stroke-dasharray: 440; /* Circumference of the circle: 2 * pi * r */
+  transform: translate(5px, 5px);
+  stroke-dasharray: 440;
   stroke-dashoffset: 440;
-  margin-bottom: 20px; /* Start with the dash fully offset */
+  margin-bottom: 20px;
 }
-
-/* Background circle (gray) */
 .progress-ring svg circle:nth-child(1) {
-  stroke-dashoffset: 0; /* No offset for the background circle */
-  stroke: hsl(0, 78%, 48%); /* Gray color for background */
+  stroke-dashoffset: 0;
+  stroke: hsl(0, 78%, 48%);
 }
-
-/* Foreground circle (colored progress bar) */
 .progress-ring svg circle:nth-child(2) {
-  stroke-dashoffset: 440; /* Start fully offset */
-  stroke: #21a0ff; /* Blue color for progress */
+  stroke-dashoffset: 440;
+  stroke: #21a0ff;
 }
-
 .progress-ring .number {
   position: absolute;
   left: 0;
@@ -317,7 +237,6 @@ animation */
   align-items: center;
   color: #000;
 }
-
 .progress-ring .number span:nth-child(1) {
   font-size: 28px;
 }

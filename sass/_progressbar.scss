@@ -1,50 +1,47 @@
 .progress-ring {
-            position: relative;
-            width: 150px;
-            height: 150px;
-            margin: 0 auto;
-        }
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
 
-        /* Style for the SVG element inside the container */
-        .progress-ring svg {
-            width: 150px;
-            height: 150px;
-        }
+  svg {
+    width: 150px;
+    height: 150px;
 
-        /* Base style for both circles inside the SVG */
-        .progress-ring svg circle {
-            fill: none;
-            stroke-width: 10;
-            stroke: #000;
-            transform: translate(5px, 5px);  /* Offset the stroke slightly */
-            stroke-dasharray: 440;    /* Circumference of the circle: 2 * pi * r */
-            stroke-dashoffset: 440; 
-            margin-bottom: 20px;  /* Start with the dash fully offset */
-        }
+    circle {
+      fill: none;
+      stroke-width: 10;
+      stroke: #000;
+      transform: translate(5px, 5px);
+      stroke-dasharray: 440;
+      stroke-dashoffset: 440;
+      margin-bottom: 20px;
 
-        /* Background circle (gray) */
-        .progress-ring svg circle:nth-child(1) {
-            stroke-dashoffset: 0;   /* No offset for the background circle */
-            stroke: hsl(0, 78%, 48%);        /* Gray color for background */
-        }
+      &:nth-child(1) {
+        stroke-dashoffset: 0;
+        stroke: hsl(0, 78%, 48%);
+      }
 
-        /* Foreground circle (colored progress bar) */
-        .progress-ring svg circle:nth-child(2) {
-            stroke-dashoffset: 440;  /* Start fully offset */
-            stroke: #21a0ff;         /* Blue color for progress */
-        }
-        .progress-ring .number{
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #000;
+      &:nth-child(2) {
+        stroke-dashoffset: 440;
+        stroke: #21a0ff;
+      }
+    }
+  }
 
-        }
-        .progress-ring .number span:nth-child(1){
-          font-size: 28px
-        }
+  .number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+
+    span:nth-child(1) {
+      font-size: 28px;
+    }
+  }
+}
