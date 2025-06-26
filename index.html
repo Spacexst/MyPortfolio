@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-
+  
   <!-- Vendor & Custom CSS -->
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
+
+<!--body-->
 <body>
+ <!--header-->
   <header class="header-in text-center">
     <h1>Anuradha Mangalpalli</h1>
     <h3>Web developer and designer</h3>
   </header>
+
  <!-- Navigation Bar -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
     <div class="container">
@@ -35,30 +38,36 @@
       </div>
     </div>
   </nav>
-  <div class="fade-overlay" id="overlay">
+
+  <!-- Fade Overlay -->
+<div class="fade-overlay" id="overlay">
   <h2>Welcome to my Portfolio</h2>
 </div>
+
+<!--sidebar-->
 <div class="social-sidebar">
       <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
       <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
       <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
 </div>
 
- 
+<!--main container-->
+<main class="container py-5">
 
-
-  <main class="container py-5">
-    
-    <!-- About Section -->
+  <!-- About Section -->
     <section id="about" class="my-5">
       <div class="row align-items-center">
+
+        <!--aside-->
         <aside class="col-md-4 text-md-end text-center">
           <h4>About Me</h4>
         </aside>
+
+        <!--article-->
         <article class="col-md-8 text-start">
           <div class="row">
             <div class="col-12 col-lg-5 text-center mb-3 mb-lg-0">
-              <img src="images/Anu (1).jpeg" alt="Anuradha Mangalpalli" class="img-fluid rounded-circle" style="max-width: 200px;">
+              <img class="image" src="images/Anu (1).jpeg" alt="Anuradha Mangalpalli"/>
             </div>
             <div class="col-12 col-lg-7">
               <p>
@@ -70,8 +79,9 @@
         </article>
       </div>
     </section>
+  </br>
 
-    <!-- Work Experience -->
+  <!-- Work Experience -->
     <section id="work-experience" class="my-5">
       <div class="row align-items-start">
         <aside class="col-md-4 text-md-end text-center">
@@ -87,6 +97,7 @@
         </article>
       </div>
     </section>
+  </br>
 
     <!-- Education -->
     <section id="education" class="my-5">
@@ -101,18 +112,23 @@
         </article>
       </div>
     </section>
- <section id="technical" class="my-5">
-  <div class="container">
-    <h4>Technical Skills</h4>
+  </br>
 
-    <!-- Front-end Skills -->
-    <div class="row align-items-center mb-4">
-      <div class="col-md-6 text-start">
-        <h5 class="mb-3">Front-end Skills</h5>
-        <div class="d-flex flex-wrap gap-2">
-          <span class="badge text-white fs-6">
-            <i class="fab fa-html5 me-1"></i> HTML5
-          </span>
+   <!--Technical kills-->
+  <section id="technical" class="my-5">
+    <div class="row align-items-start">
+    <div class="container">
+      <aside class="col-md-4 text-md-end text-center"></aside>
+      <h4>Technical Skills</h4>
+
+      <!-- Front-end Skills -->
+      <div class="row align-items-center mb-4">
+        <div class="col-md-6 text-start">
+          <h5 class="mb-3">Front-end Skills</h5>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="badge text-white fs-6">
+              <i class="fab fa-html5 me-1"></i> HTML5
+            </span>
           <span class="badge text-white fs-6">
             <i class="fab fa-css3-alt me-1"></i> CSS3
           </span>
@@ -190,19 +206,15 @@
             <div class="number">
             <h3><span class="value percent-text" id="value3">0</span><span>%</span></h3>
           </div>
-           
-         
-          </div>
+        </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-      
+</br>
 
-       
-    
-    <!-- Projects -->
+<!-- Projects -->
 <section id="project" class="my-5">
   <div class="row align-items-start">
     <aside class="col-md-4 text-md-end text-center">
@@ -210,6 +222,7 @@
     </aside>
     <article class="col-md-8">
       <div class="row g-4">
+
         <!-- Project 1 -->
         <div class="col-md-6">
           <div class="card h-100 shadow-sm">
@@ -224,30 +237,31 @@
         </div>
 
         <!-- Project 2 -->
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <img src="images/React.js.png" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title">Web Capstone project</h5>
-              <p class="card-text">An food takeaway app built with HTML, CSS, JavaScript and React.js</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
-              
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <img src="images/React.js.png" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Web Capstone project</h5>
+            <p class="card-text">An food takeaway app built with HTML, CSS, JavaScript and React.js</p>
+            <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
             </div>
-          </div>
         </div>
-         <div class="col-md-6">
+      </div>
+
+        <!-- Project 3 -->
+         
+      <div class="col-md-6">
           <div class="card h-100 shadow-sm">
             <img src="images/Django.png" class="card-img-top" alt="Project 2">
             <div class="card-body">
               <h5 class="card-title">Django project</h5>
               <p class="card-text">Capstone Project (Software development)</p>
               <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
-              
             </div>
           </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Project 4 -->
         <div class="col-md-6">
           <div class="card h-100 shadow-sm">
             <img src="images/bnb.png" class="card-img-top" alt="Project 4">
@@ -255,70 +269,66 @@
               <h5 class="card-title">Web programming (Frontend & Back-end</h5>
               <p class="card-text">A secure login and registration system using PHP and MySQL, styled with Bootstrap forms.</p>
               <a href="#" class="btn btn-outline-primary btn-sm">View Project</a>
-              
-            </div>
+             </div>
           </div>
         </div>
       </div>
     </article>
   </div>
 </section>
+</br>
 
-
-    <!-- Contact Form -->
+<!-- Contact Form -->
  <section id="contact" class="my-5">
-      <div class="row align-items-start">
-        <aside class="col-md-4 text-md-end text-center">
-          <h4>Contact</h4>
-        </aside>
-        <article class="col-md-8">
-<form class="row g-3" action="#" method="post">
-  <fieldset class="border p-3 rounded">
-    <legend class="float-none w-auto px-2">Get in Touch</legend>
+  <div class="row align-items-start">
+    <aside class="col-md-4 text-md-end text-center">
+      <h4>Contact</h4>
+    </aside>
 
-    <!-- form fields here -->
-    
-    <div class="col-md-6">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" name="Name" required>
-    </div>
-    <div class="col-md-6">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" name="Email" required>
-    </div>
-    <div class="col-md-12">
-      <label for="message" class="form-label">Message</label>
-      <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
-    </div>
-    <div class="col-12">
-      <button type="submit" class="btn">Send Message</button>
-    </div>
+    <article class="col-md-8">
+      <legend class="form-legend">Get in Touch</legend>
 
-    <!-- Success message -->
-    <div id="formSuccess" class="mt-2 text-success" style="display: none;">
-      Message sent successfully!
-    </div>
+      <form class="row g-3" action="#" method="post">
+       <fieldset class="border p-3 rounded">
+           <div class="col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="Name" required>
+          </div>
 
-  </fieldset>
-</form>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="Email" required>
+          </div>
 
+          <div class="col-md-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="Message" rows="5" required></textarea>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+           <div id="formSuccess" class="mt-2 text-success" style="display: none;">
+           
+            <!-- Success message -->
+          Message sent successfully!
+        </div>
+        </fieldset>
+      </form>
+    </article>
+  </div>
+</div>
+  </section>
+</main>
   
-            
-        </article>
-      </div>
-    </section>
-  </main>
-  
-
-
-  <!-- Footer -->
+<!-- Footer -->
   <footer class="footer-in" text-white text-center p-3">
     <medium>&copy; Anuradha Mangalpalli 2025. All rights reserved.</medium>
   </footer>
-</main>
+
+
   
-  
-  <!-- Scripts -->
+ <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     function updateValue(value) {
@@ -329,7 +339,9 @@
       $('#overlay').fadeIn(1000).delay(2000).fadeOut(1000);
     });
   </script>
-  <script src="js/script.js"></script>
+  
+  <!-- Linking custom script and Bootstrap JS -->
+ <script src="js/script.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
   <script>
   document.querySelector("form").addEventListener("submit", function (e) {
@@ -359,6 +371,8 @@
     }, 4000);
   });
 </script>
+
+<!-- Run this code when the DOM is fully loaded (before images/styles may finish-->
 <script>
   window.addEventListener("DOMContentLoaded", () => {
     const overlay = document.getElementById("overlay");
@@ -369,11 +383,12 @@
     // Optional: remove overlay after a few seconds
     setTimeout(() => {
       overlay.style.display = "none";
-    }, 4000); // 4 seconds
+    }, 8000); // 4 seconds
   });
 </script>
 
-</body>
+
+<!-- SVG Animation -->
 <script>
     // Select elements for percent and circle
     const percentages = [80, 75, 75];
@@ -398,6 +413,8 @@ currentPercent) / 10); // Increment the percentage
  animateCircle(percent); // Start the animation
  });
  </script>
+ </body>
+
  
 
 </html>

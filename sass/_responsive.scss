@@ -1,32 +1,102 @@
+@import './mixins';
 
-//responsive.scss
-@media (max-width:576px){  //exra small devices
-    .navbar-nav{
-        text-align: center;
-    }
-
-    .container{
-        @include responsive-padding($padding-small,$padding-small,$padding-small,$padding-small,$padding-small)
-
-    }
+// --------------------
+// Section Wrapper
+// --------------------
+.section-wrapper {
+  @include responsive-padding(1rem, 1.5rem, 2rem, 3rem, 4rem);
+  
+  @include section-layout;
 }
 
+// --------------------
+// Card Image
+// --------------------
+.card-image {
+  width: 100%;
+  border-radius: 8px;
 
-@media (min-width:576px){  //small devices
-   
+  @include sm-only {
+    width: 80%;
+    margin: 0 auto;
+  }
 
-    .container{
-        @include responsive-padding($padding-small,$padding-medium,$padding-medium,
-        $padding-medium,$padding-medium)
-        
-    }
+  @include xs-only {
+    width: 100%;
+  }
 }
-@media (min-width:768px){  //medium devices
-   
-    .navbar-nav{
-        text-align:left;
-    }
-    .project{
-        padding: $padding-medium;
-    }
+
+// --------------------
+// Flex Container
+// --------------------
+.flex-container {
+  @include flexCenter(column);
+
+  @include md-only {
+    @include flexCenter(row);
+  }
 }
+
+// --------------------
+// Title Text Font Sizes
+// --------------------
+.title-text {
+  font-size: 1.25rem;
+
+  @include sm-only {
+    font-size: 1.5rem;
+  }
+
+  @include md-only {
+    font-size: 1.75rem;
+  }
+
+  @include lg-only {
+    font-size: 2rem;
+  }
+
+  @include xl-up {
+    font-size: 2.25rem;
+  }
+}
+
+// --------------------
+// Container Padding (Universal)
+// --------------------
+.container {
+  @include responsive-padding(1rem, 1.5rem, 2rem, 3rem, 4rem);
+}
+
+// --------------------
+// Navbar Alignment
+// --------------------
+@include xs-only {
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+@include md-only {
+  .navbar-nav {
+    text-align: left;
+  }
+
+  .project {
+    padding: $padding-medium;
+  }
+}
+
+// --------------------
+// Ensure Footer and Contact Form Always Show
+// Including iPad Pro range
+// --------------------
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-form,
+  .site-footer {
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+    opacity: 1 !important;
+  }
+}
+
